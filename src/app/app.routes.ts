@@ -1,3 +1,12 @@
 import { Routes } from '@angular/router';
+import { Weather } from './weather/weather';
+import { Home } from './home/home';
+import { City } from './city/city';
+import { Country } from './country/country';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {path: '', pathMatch:'full', component: Home},
+    {path: 'weather', component: Weather},
+    {path: 'city', component: City},
+    {path: 'country', component: Country}
+];
