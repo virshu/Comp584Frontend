@@ -10,5 +10,5 @@ export const routes: Routes = [
     {path: 'weather', component: Weather},
     {path: 'city', component: City},
     {path: 'country', component: Country},
-    {path: 'population/:id', component: CountryPopulation}
+    {path: 'country/:id/population', component: CountryPopulation}
 ];
