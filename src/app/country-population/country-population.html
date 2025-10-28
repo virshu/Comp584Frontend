@@ -1,7 +1,5 @@
 <h1>Country Population</h1>
-@if (countryPopulation) {
-    <p>{{countryPopulation.name}} has a population of {{countryPopulation.population}}</p>
-}
+    <p>{{(countryPopulation$ | async)?.name}} has a population of {{(countryPopulation$ | async)?.population}}</p>
 <div>
     <a [routerLink]="['/country']">Countries</a>
 </div>
